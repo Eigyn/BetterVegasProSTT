@@ -1,0 +1,23 @@
+# Only what Setup.cmd needs to build and install Subtitler is tracked. Everything else stays
+# local: tests and their gold-set recordings, design notes, benchmark runs, backups, IDE
+# project files and build output. Anything new at the top level is ignored until listed here.
+
+/*
+
+!/.gitignore
+!/.gitattributes
+!/LICENSE
+!/README.md
+!/Setup.cmd
+!/Uninstall.cmd
+!/setup/
+!/src/
+# Screenshots for the README.
+!/images/
+
+# IDE project files; setup\Build.ps1 compiles without them.
+/src/**/*.csproj
+__pycache__/
+bin/
+obj/
+*.log
